@@ -8,7 +8,7 @@ import (
 	"path/filepath"
 )
 
-func MergeCSV(folderPath string, mergedFilename string) error {
+func Merge(folderPath string, mergedFilename string) error {
 	// List all CSV files in the specified folder
 	files, err := filepath.Glob(filepath.Join(folderPath, "*.csv"))
 	if err != nil {
